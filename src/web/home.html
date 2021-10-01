@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Home Page</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/heroes.css" rel="stylesheet">
+</head>
+<body>
+<main>
+
+    <!-- Hero Banner -->
+    <div class="container col-xxl-8 px-4 py-5" id="hero-banner">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images/bag.png" class="d-block mx-lg-auto img-fluid" alt="Bag" width="140" height="100"
+                     loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="display-5 fw-bold lh-1 mb-3">Cat In The Bag</h3>
+                <p class="lead">We're building the next big thing! It will be a complete surprise and it will be
+                    awesome!</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 bi bi-download">
+                        <a style="color: white; text-decoration: none;" href="files/dummy.pdf" id="download">
+                            Download </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-download" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 bi bi-download">
+                        <a style="color: white; text-decoration: none;" href="files/dummy.zip" id="download-zip">
+                            Download ZIP </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-download" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 bi bi-download">
+                        <a style="color: white; text-decoration: none;" href="advantages.html"> More Info</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- Forms: Register and Contact  -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row mb-3">
+            <div class="h-100 p-5 bg-light border rounded-3 col-md-5 themed-grid-col">
+                <h2>Become an early adopter</h2>
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input class="form-control" id="nameInput" placeholder="John">
+                    </div>
+                    <br/>
+
+                    <div class="form-group">
+                        <label for="surnameInput">Surname</label>
+                        <!-- my-id is not allowed and not recognized by PW-->
+                        <input class="form-control" id="surnameInput" data-test-id="surnameInput"
+                               my-id="surnameInput" placeholder="Doe">
+                    </div>
+                    <br/>
+
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="your@email.com">
+                        <small id="emailHelp" class="form-text text-muted">We'll probably not share your email with
+                            anyone
+                            else.</small>
+                    </div>
+
+                    <br/>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I agree to all the fine print</label>
+                    </div>
+                    <br/>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+            <div class="col-md-2 themed-grid-col"></div>
+            <div class="h-100 p-5 bg-light border rounded-3 col-md-5 themed-grid-col">
+                <h2>Contact us</h2>
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                               placeholder="your@email.com">
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        <label for="contactReason">Reason for contacting</label>
+                        <select class="form-control" id="contactReason">
+                            <option value="Question">Question</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Bored">I'm just bored</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        <label for="exampleMessage">Message</label>
+                        <div id="boredOption" class=" mb-2 mt-2"></div>
+                        <textarea class="form-control" placeholder="Where do I start..." id="exampleMessage"
+                                  rows="2"></textarea>
+                    </div>
+                    <br/>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="sendCopy">
+                        <label class="form-check-label" for="sendCopy">Send me a copy</label>
+                    </div>
+                    <br/>
+                    <button type="button" class="btn btn-primary" id="submit-contact">Submit</button>
+                </form>
+
+                <br/><br/>
+                <div id="copyConfirmation" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+
+        <div class="row px-4 py-5 text-center">
+            <h1 class="display-5 fw-bold">Support us!</h1>
+        </div>
+
+        <div class="row mb-3">
+            <div class="h-100 p-5  col-md-5 themed-grid-col">
+                <h2>Donate</h2>
+
+                <p class="lead mb-4">We don't know what we'll create, but it'd be great if you supported us
+                    (please)!</p>
+                <div class="d-grid gap-2 d-sm-flex">
+                    <form>
+                        <div class="form-group">
+                            <label for="donation">Amount</label>
+                            <br/><br/>
+                            <input class="form-control" id="donation" placeholder="$50">
+                        </div>
+                        <br/>
+                        <button type="button" id="submit-donation" class="btn btn-primary">Donate</button>
+                    </form>
+
+                </div>
+                <br/>
+                <div id="donation-confirmation"></div>
+            </div>
+            <div class="col-md-2 themed-grid-col"></div>
+            <div class="h-100 p-5 col-md-5 themed-grid-col">
+                <h2>Clap for us</h2>
+
+                <p class="lead mb-4">Spread the word through social media.</p>
+
+                <img src="images/clap.png" id="clap-image" style="cursor: pointer;" width="137" height="152">
+                <div id="thank-you" class="mt-3"></div>
+                <div id="thank-you-2" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/my.js"></script>
+
+<noscript>
+    <div class="container col-xxl-8 px-4 py-5" id="enable-js-msg">
+        <div class="alert alert-danger d-flex justify-content-center">
+            We really need JavaScript enabled to work our magic!
+        </div>
+    </div>
+</noscript>
+
+</body>
+</html>
